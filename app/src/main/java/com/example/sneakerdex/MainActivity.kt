@@ -12,20 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    val firstFragment=HomeFragment()
-    val secondFragment=SecondFragment()
-    val thirdFragment=ThirdFragment()
 
-    setCurrentFragment(firstFragment)
 
-    bottomNavigationView.setOnNavigationItemSelectedListener {
-        when(it.itemId){
-            R.id.home->setCurrentFragment(firstFragment)
-            R.id.person->setCurrentFragment(secondFragment)
-            R.id.settings->setCurrentFragment(thirdFragment)
-
-        }
-        true
-    }
 
 }
